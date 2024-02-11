@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificación final en Algoritmos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #B62084;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #DA8FC1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+
+        input[type="button"] {
+            padding: 8px 15px;
+            background-color: #BD56F1;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        table {
+            margin: 0 auto;
+        }
+
+        table td {
+            padding: 5px;
+        }
+
+        table td:first-child {
+            text-align: right;
+        }
+
+        table td:nth-child(2) {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <p>Calculadora de calificación final en Algoritmos</p>
+            <div class="form">
+                <form method="post" name="calificacionForm" action="">
+                    <table>
+                        <tr>
+                            <td>Calificación del parcial 1:</td>
+                            <td>
+                                <input type="number" name="parcial1" min="0" max="10">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Calificación del parcial 2:</td>
+                            <td>
+                                <input type="number" name="parcial2" min="0" max="10">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Calificación del parcial 3:</td>
+                            <td>
+                                <input type="number" name="parcial3" min="0" max="10">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Calificación del examen final:</td>
+                            <td>
+                                <input type="number" name="examenFinal" min="0" max="10">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Calificación del trabajo final:</td>
+                            <td>
+                                <input type="number" name="trabajoFinal" min="0" max="10">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Calcular calificación final" name="calcular" onclick="calcularCalificacion()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Calificación final:</td>
+                            <td>
+                                <input type="text" readonly="readonly" class="input-text" name="calificacionFinal" id="calificacionFinal">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/js 4.js"></script>
+</body>
+</html>
