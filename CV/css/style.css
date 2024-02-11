@@ -1,98 +1,101 @@
-*{
-    margin: 0;
-    padding: 0;
+*{margin: 0;
+padding: 0;
 }
 
 .dp {
-    background-color: rgb(79, 140, 255);
-    text-align: center; 
-    padding: 20px;
-}
-
-.dp button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.dp img {
-    width: 100px; 
-    float: left;
-    margin-right: 30px;
+text-align: center; 
+padding: 20px;
+background-image: linear-gradient(to bottom, rgb(119,170,255) 50%, white 50%);
 }
 
 .dp h1 {
-    font-size: 40px;
-    margin-top: 10px;
+font-size: 40px;
+margin-top: 10px;
+display: inline-block;
+border: 2px solid black; 
+padding: 15px; 
+margin-bottom: 15px;
 }
 
-.dp p {
-    margin-top: 5px;
-    font-size: 15px;
-}
 .contenedor {
-    display: flex;
+display: flex;
 }
 
 .izquierda{
-    
-    width: 20%;
-    height: 620px;
-    background-color: rgb(151, 187, 255);
+
+width: 30%;
+height: 620px;
+background-color: white;
 }
 .derecha{
-    
-    width: 80%;
-    height: 620px;
-    background-color: rgb(195, 213, 248);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 19px;
+
+width: 70%;
+height: 620px;
+background-color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 16px;
 }
 .contacto, .Educacion, .Habilidades h2{
-    margin-top: 10px;
-    margin-left: 10px;
+margin-top: 10px;
+margin-left: 10px;
+color: rgb(119,170,255);
 
-}
-.contacto p,h1{
-    margin-top: 8px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 10px;
 }
 .contacto img{
-    width: 25px;
-    float: left;
-    margin-left: 5px;
+width: 25px;
+float: left;
+margin-left: 5px;
+margin-right: 10px;
 }
 
- .contacto button{
-     border-radius: 15px;
-     width: 200px;
-     height: 40px;
-     margin-top: 10px;
-     margin-left: 10PX;
- }
+.contact-item {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+border-radius: 15px;
+width: 80%;
+height: 40px;
+margin-top: 5px;
+padding-left: 10px;
+background-color: white;
+font-family: 'Times New Roman', Times, serif;
+font-size: 14px;
+border-color: white;
+color: black;
+}
+
+.contact-item img {
+width: 25px;
+margin-right: 10px;
+}
+
 
 .Habilidades ul{
-    margin-left: 35px;
+margin-left: 35px;
 }
 
 .Educacion ul{
-    margin-left: 20px;
+margin-left: 20px;
+color: black;
 }
 
 .Yo, .Experiencia h2{
-    margin-top: 10px;
-    margin-left: 30px;
+margin-top: 10px;
+margin-left: 30px;
+color: rgb(119,170,255);
 }
 
 .Experiencia  ul{
-    margin-left: 55PX;
+margin-left: 55PX;
+}
+.Yo p{
+    color: black;
+    margin-right: 20px;
+    text-align: justify;
 }
 a{
-    font-size: 15px;
-    margin-top: 20px;
-    margin-left: 870px;
-    color:blue;
+font-size: 15px;
+margin-top: 40px;
+margin-left: 760px;
+color:blue;
 }
