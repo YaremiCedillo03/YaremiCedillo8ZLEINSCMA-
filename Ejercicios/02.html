@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Comisiones de Venta</title>
+    <style>
+        body {
+            font-family: 'Century Schoolbook';
+            background-color: white;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: black;
+            padding: 20px;
+            border-radius: 8px;
+            color: #fff;
+        }
+        .container p{
+            font-family: 'Cream Cake';
+            font-size: 35px;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+
+        input[type="button"] {
+            padding: 8px 15px;
+            background-color: #B7B7B7;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-family: 'Century Schoolbook';
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        table td {
+            padding: 5px;
+        }
+
+        table td:first-child {
+            text-align: right;
+        }
+
+        table td:nth-child(2) {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <p>Calculadora de Comisiones de Venta</p>
+            <div class="form">
+                <form method="post" name="ventasForm" action="">
+                    <table>
+                        <tr>
+                            <td>Sueldo Base:</td>
+                            <td>
+                                <input type="text" name="sueldoBase" id="sueldoBase" oninput="validarNumeros(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Venta 1:</td>
+                            <td>
+                                <input type="text" name="venta1" id="venta1" oninput="validarNumeros(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Venta 2:</td>
+                            <td>
+                                <input type="text" name="venta2" id="venta2" oninput="validarNumeros(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Venta 3:</td>
+                            <td>
+                                <input type="text" name="venta3" id="venta3" oninput="validarNumeros(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Calcular Comisiones" name="calcular" onclick="calcularComisiones()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Comisión Total:</td>
+                            <td>
+                                <input type="text" readonly="readonly" class="input-text" name="comisionTotal" id="comisionTotal">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Total Mensual:</td>
+                            <td>
+                                <input type="text" readonly="readonly" class="input-text" name="totalMensual" id="totalMensual">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/js 2.js"></script>
+</body>
+</html>

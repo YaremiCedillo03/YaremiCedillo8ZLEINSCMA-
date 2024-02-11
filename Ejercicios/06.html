@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Edad</title>
+    <style>
+        body {
+            font-family: 'Century Schoolbook';
+            background-color: black;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .container p{
+            font-family: 'Cream Cake';
+            font-size: 45px;
+        }
+        .text {
+            text-align: center;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        input[type="date"],
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+
+        input[type="button"] {
+            padding: 8px 15px;
+            background-color: #7F7F7F;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-family: 'Century Schoolbook';
+        }
+
+     
+        table {
+            margin: 0 auto;
+        }
+
+        table td {
+            padding: 5px;
+        }
+
+        table td:first-child {
+            text-align: right;
+        }
+
+        table td:nth-child(2) {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <p>Calculadora de Edad</p>
+            <div class="form">
+                <form method="post" name="edadForm" action="">
+                    <table>
+                        <tr>
+                            <td>Fecha de Nacimiento:</td>
+                            <td>
+                                <input type="date" name="fechaNacimiento">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Calcular Edad" name="calcular" onclick="calcularEdad()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edad:</td>
+                            <td>
+                                <input type="text" readonly="readonly" class="input-text" name="edad" id="edad">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/js 6.js"></script>
+</body>
+</html>
