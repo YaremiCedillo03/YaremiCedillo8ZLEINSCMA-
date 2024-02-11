@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentaje de hombres y mujeres</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5907B;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #F7CA89;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+
+        input[type="button"] {
+            padding: 8px 15px;
+            background-color: #F7AD97;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        table td {
+            padding: 5px;
+        }
+
+        table td:first-child {
+            text-align: right;
+        }
+
+        table td:nth-child(2) {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <p>Calculadora de porcentaje de hombres y mujeres en un grupo de estudiantes</p>
+            <div class="form">
+                <form method="post" name="estudiantesForm" action="">
+                    <table>
+                        <tr>
+                            <td>Número total de hombres:</td>
+                            <td>
+                                <input type="text" name="numHombres" onkeypress="return soloNumeros(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Número total de mujeres:</td>
+                            <td>
+                                <input type="text" name="numMujeres" onkeypress="return soloNumeros(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Calcular porcentaje" name="calcular" onclick="calcularPorcentaje()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Porcentaje de hombres:</td>
+                            <td>
+                                <input type="text" readonly="readonly" class="input-text" name="porcentajeHombres" id="porcentajeHombres">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Porcentaje de mujeres:</td>
+                            <td>
+                                <input type="text" readonly="readonly" class="input-text" name="porcentajeMujeres" id="porcentajeMujeres">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/js 5.js"></script>
+    <script>
+        function soloNumeros(event) {
+            var key = event.key;
+            return (key >= '0' && key <= '9');
+        }
+    </script>
+</body>
+</html>
