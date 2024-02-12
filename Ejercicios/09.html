@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Horas Extras</title>
+    <style>
+        body {
+            background-color: #BBEEFF;
+            font-family: 'Century Schoolbook';
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #E4BBF9;
+            padding: 20px;
+            border-radius: 8px;            
+        }
+        .container p{
+            font-family: 'Cream Cake';
+            font-size: 35px;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        input[type="text"],
+        input[type="button"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+
+        .input-text {
+            width: 150px;
+            font-weight: bold;
+        }
+
+        input[type="button"] {
+            background-color: #77AAFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-family: 'Century Schoolbook';
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        table td {
+            padding: 5px;
+        }
+
+        table td:first-child {
+            text-align: right;
+        }
+
+        table td:nth-child(2) {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <div class="text">
+                <p>Calculadora de Horas Extras</p>
+                <div class="form">
+                    <form method="post" name="formulario" action="">
+                        <div class="table-content">
+                            <table>
+                                <tr>
+                                    
+                                    <td>Horas Trabajadas:</td>
+                                    <td>
+                                        <input type="text" name="horasTrabajadas" onkeypress="return validarNumeros(event)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="button" value="Calcular Pago" name="calcular" onclick="calcularPago()">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pago Total:</td>
+                                    <td>
+                                        <input type="text" readonly="readonly" class="input-text" name="pagoTotal" id="pagoTotal">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="button" value="Borrar Datos" name="borrar" onclick="borrarDatos()">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>La hora se paga de $30</td>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/js 9.js"></script>
+</body>
+</html>

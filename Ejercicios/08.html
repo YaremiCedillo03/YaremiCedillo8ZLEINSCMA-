@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayor de tres números</title>
+  <style>
+    body {
+        font-family: 'Century Schoolbook';
+        background-color: #B62084;
+        color: #fff;
+    }
+
+    .container {
+        width: 50%;
+        margin: 50px auto;
+        background-color: black;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .container p{
+        font-family: 'Cream Cake';
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .form {
+        margin-top: 20px;
+    }
+
+    .input-number {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    .btn-buscar {
+        padding: 8px 15px;
+        background-color:#BD56F1 ;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 500px;
+    }
+
+    .resultado {
+        margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>Mayor de tres números</p>
+    
+    <label for="num1">Número 1:</label>
+    <input type="text" id="num1" class="input-number" oninput="validarNumero(this)"><br>
+    
+    <label for="num2">Número 2:</label>
+    <input type="text" id="num2" class="input-number" oninput="validarNumero(this)"><br>
+    
+    <label for="num3">Número 3:</label>
+    <input type="text" id="num3" class="input-number" oninput="validarNumero(this)"><br>
+
+    <button onclick="encontrarMayor()" class="btn-buscar">Encontrar Mayor</button>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script src="./js/js 8.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con dos números</title>
+    <style>
+        body {
+            font-family: 'Century Schoolbook';
+            background-color: #BD56F1;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #F7AD97;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .container p{
+            font-family: 'Cream Cake';
+            font-size: 45px;
+        }
+        .text {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        input[type="date"],
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        input[type="button"] {
+            padding: 8px 15px;
+            background-color: #BD56F1;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-family: 'Century Schoolbook';
+            margin-top: 20px;
+            margin-left: 200px;
+        }
+
+     
+        table {
+            margin: 0 auto;
+        }
+
+        table td {
+            padding: 5px;
+        }
+
+        table td:first-child {
+            text-align: right;
+        }
+
+        table td:nth-child(2) {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <p>Operaciones con dos números</p>
+            <div class="form">
+                <form method="post" name="operacionesForm" action="">
+                    <label for="numero1">Primer número:</label>
+                    <input type="text" name="numero1" id="numero1" oninput="validarNumeros(this)">
+                    <br>
+                    <label for="numero2">Segundo número:</label>
+                    <input type="text" name="numero2" id="numero2" oninput="validarNumeros(this)">
+                    <br>
+                    <input type="button" value="Realizar Operación" name="calcular" onclick="realizarOperacion()">
+                    <br>
+                    <label for="resultado">Resultado:</label>
+                    <input type="text" readonly="readonly" class="input-text" name="resultado" id="resultado">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/js 7.js"></script>
+    <script>
+        function validarNumeros(input) {
+            input.value = input.value.replace(/[^0-9]/g, '');
+        }
+    </script>
+</body>
+</html>
